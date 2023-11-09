@@ -8,6 +8,8 @@ function CreditCard({cardInfo}) {
        <Name text={cardInfo.holderName} />
        <CardNumber  text={cardInfo.cardNumber}/>
        <Bank text={cardInfo.bank}/>
+       <Civ text={cardInfo.civ}/>
+       <Validity text={cardInfo.validy}/>
     </div>
   )
 }
@@ -36,11 +38,27 @@ const Bank = ({text}) => {
   )
 }
 
+const Civ = ({text}) => {
+  return (
+    <div className='card-civ'>
+      {text}
+    </div>
+  )
+}
+
+const Validity = ({text}) => {
+  return (
+    <div className='card-validity'>
+      {text}
+    </div>
+  )
+}
+
 const testCardInfo = {
   holderName: 'CardHolder Name',
   cardNumber: '123 345 678 879',
   civ: '234',
-  validy: '08/26',
+  validy: 'Valid thru 08/26',
   bank: 'Big Bank Inc.'
 }
 
