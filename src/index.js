@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+import imageLogo   from './image/react-icon.png'
 
 function CreditCard({cardInfo}) {
   return (
@@ -10,6 +11,16 @@ function CreditCard({cardInfo}) {
        <Bank text={cardInfo.bank}/>
        <Civ text={cardInfo.civ}/>
        <Validity text={cardInfo.validy}/>
+    </div>
+  )
+}
+
+function Poster({details}) {
+  return (
+    <div className='poster'>
+      <Image />
+      <Title text={details.title}/>
+      <Text text ={details.text}/>
     </div>
   )
 }
@@ -54,6 +65,33 @@ const Validity = ({text}) => {
   )
 }
 
+const Image = () => {
+  return (
+    <div className='image-style'>
+     <img 
+       src={imageLogo}
+       alt='Poster Logo'
+       className='poster-image'/>
+    </div>
+  )
+}
+
+const Title = ({text}) => {
+  return (
+    <div className='title'>
+      {text}
+    </div>
+  )
+}
+
+const Text = ({text}) => {
+  return (
+    <div className='poster-text'>
+      {text}
+    </div>
+  )
+}
+
 const testCardInfo = {
   holderName: 'CardHolder Name',
   cardNumber: '123 345 678 879',
@@ -62,9 +100,15 @@ const testCardInfo = {
   bank: 'Big Bank Inc.'
 }
 
+const posterDetails = {
+  title: "React",
+  text: "The best thing since jQuery, Probbaly"
+}
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <CreditCard cardInfo={testCardInfo} />
+    <Poster details={posterDetails}/>
   </React.StrictMode>
 );
