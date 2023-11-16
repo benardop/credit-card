@@ -103,7 +103,6 @@ const Text = ({text}) => {
     </div>
   )
 }
-
 const Sender = ({text}) => {
   return (
     <div className='sender'>
@@ -111,7 +110,6 @@ const Sender = ({text}) => {
     </div>
   )
 }
-
 const Subject = ({text}) => {
   return (
     <div className='subject'>
