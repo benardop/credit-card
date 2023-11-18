@@ -135,7 +135,6 @@ const Date = ({text}) => {
     </div>
   )
 }
-
 const testCardInfo = {
   holderName: 'CardHolder Name',
   cardNumber: '123 345 678 879',
@@ -148,14 +147,12 @@ const posterDetails = {
   title: "React",
   text: "The best thing since jQuery, Probbaly"
 }
-
 const sampleEmail = {
   sender: "John Doe",
   subject: "React latest Review",
   message: "This is a smaple message on the latest react release update",
   date: "July 15"
 }
-
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
