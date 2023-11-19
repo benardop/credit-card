@@ -119,7 +119,6 @@ const Subject = ({text}) => {
     </div>
   )
 }
-
 const Message = ({text}) => {
   return (
     <div className='message'>
@@ -142,7 +141,6 @@ const testCardInfo = {
   validy: 'Valid thru 08/26',
   bank: 'Big Bank Inc.'
 }
-
 const posterDetails = {
   title: "React",
   text: "The best thing since jQuery, Probbaly"
