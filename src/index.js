@@ -111,7 +111,6 @@ const Sender = ({text}) => {
     </div>
   )
 }
-
 const Subject = ({text}) => {
   return (
     <div className='subject'>
@@ -126,7 +125,6 @@ const Message = ({text}) => {
     </div>
   )
 }
-
 const Date = ({text}) => {
   return (
     <div className='date'>
