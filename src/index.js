@@ -131,6 +131,7 @@ const Date = ({text}) => {
     </div>
   )
 }
+
 const testCardInfo = {
   holderName: 'CardHolder Name',
   cardNumber: '123 345 678 879',
@@ -138,10 +139,12 @@ const testCardInfo = {
   validy: 'Valid thru 08/26',
   bank: 'Big Bank Inc.'
 }
+
 const posterDetails = {
   title: "React",
   text: "The best thing since jQuery, Probbaly"
 }
+
 const sampleEmail = {
   sender: "John Doe",
   subject: "React latest Review",
